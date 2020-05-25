@@ -22,7 +22,10 @@
     "storage"
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "browser-polyfill.js",
+      "background.js"
+    ]
   },
   "web_accessible_resources": [
     "icon-large-pink-k.png",

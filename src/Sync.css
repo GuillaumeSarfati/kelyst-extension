@@ -16,23 +16,23 @@
   align-items:center
   /* style={{width: 300, height: 400, borderRadius: 20, background: 'white'}} */
 }
-#kelyst-root-chrome-extension .check {
+#kelyst-root-browser-extension .check {
   position:absolute;
   width: 50px;
   height: 50px;
   bottom: -25px;
   right: -25px;
 }
-#kelyst-root-chrome-extension .logo-wrapper {
+#kelyst-root-browser-extension .logo-wrapper {
   margin-top: 50px;
   margin-bottom: 25px;
   position:relative;
 }
-#kelyst-root-chrome-extension .logo {
+#kelyst-root-browser-extension .logo {
   width: 60px;
   height: 60px;
 }
-#kelyst-root-chrome-extension {
+#kelyst-root-browser-extension {
   position: fixed;
   top: 15px;
   right: -500px;

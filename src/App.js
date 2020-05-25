@@ -20,11 +20,16 @@ class App extends Component {
     this.stopCounter()
   }
   onSave = () => {
-    chrome.runtime.sendMessage({ action: "card", payload: { card: this.state.instance }}, response => {
+    browser.runtime
+    .sendMessage({ action: "card", payload: { card: this.state.instance }})
+    .then(response => {
       console.log('after save card', response);
     });
     this.onCancel()
   }
+
+  onBoard = () => window.open(`https://www.kelyst.com/en/board/?publicId=${this.props.board.publicId}`, `_blank`)
+
   onCancel = () => {
     this.app.classList.add('animate__animated', 'hide-kelyst')
     this.app.classList.remove('show-kelyst')
@@ -58,13 +63,13 @@ class App extends Component {
 
 
   onPlaySong = () => {
-    const audio = new Audio(chrome.runtime.getURL("graceful.mp3"));
+    const audio = new Audio(browser.runtime.getURL("graceful.mp3"));
     audio.volume = 0.1;
     audio.play();
   }
 
   onListenToPageEvents = () => {
-    this.app = document.getElementById('kelyst-root-chrome-extension')
+    this.app = document.getElementById('kelyst-root-browser-extension')
     this.app.addEventListener("mouseenter", this.stopCounter)
     // TO MEDITATE
     // this.app.addEventListener("mouseleave", this.startCounter)
@@ -124,6 +129,7 @@ class App extends Component {
           ) : null
         }
         <button className="kelyst-button-cancel" onClick={this.onCancel}>Cancel</button>
+        <button className="kelyst-button-cancel" onClick={this.onBoard}>Access to your board</button>
       </div>
     );
   }

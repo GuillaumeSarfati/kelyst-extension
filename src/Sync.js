@@ -31,7 +31,7 @@ class Sync extends Component {
 
 
   onPlaySong = () => {
-    const audio = new Audio(chrome.runtime.getURL("graceful.mp3"));
+    const audio = new Audio(browser.runtime.getURL("graceful.mp3"));
     audio.volume = 0.1;
     audio.play();
   }
@@ -48,8 +48,8 @@ class Sync extends Component {
     return (
       <div className="Kelyst">
         <div className="logo-wrapper">
-        <img className="logo" src={chrome.runtime.getURL("icon-large-pink-k.png")}/>
-        <img className="check" src={chrome.runtime.getURL("check.svg")}/>
+        <img className="logo" src={browser.runtime.getURL("icon-large-pink-k.png")}/>
+        <img className="check" src={browser.runtime.getURL("check.svg")}/>
         </div>
         <div className="kelyst-links">
           <div className="kelyst-links-wrapper">
