@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200&display=swap');
+@import './style/index.css';
+@import '../node_modules/animate.css/animate.css';
+
+.Kelyst {
+  text-align: center;
+  /* width: 300px;
+  height: 400px; */
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.1);
+  /* style={{width: 300, height: 400, borderRadius: 20, background: 'white'}} */
+}
+#kelyst-root-chrome-extension {
+  position: fixed;
+  top: 15px;
+  right: -500px;
+  z-index:9999999999;
+  /* -webkit-animation-fill-mode: both; */
+}
+.show-kelyst {
+  animation-name: show;
+  animation-duration: 1s;
+}
+
+.hide-kelyst {
+  animation-name: hide;
+  animation-duration: 1s;
+}
+@keyframes show {
+  from { transform: translateX(0px)}
+  to { transform: translateX(-515px)}
+}
+
+@keyframes hide {
+  from { transform: translateX(-515px)}
+  to { transform: translateX(0px)}
+}
+.Kelyst h1 {
+   color: #682AD5;
+   font-family: 'Lobster', cursive;
+}

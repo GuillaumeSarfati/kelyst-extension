@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-medium</title>
+    <defs>
+        <path d="M3.52199992,21.5170975 L3.52199992,25.4271213 L7.42899992,25.4270975 L7.42895122,28.863 L3.73675601,28.8632188 C1.69672395,28.8632188 0.0429512185,27.2094461 0.0429512185,25.169414 L0.0429512185,21.517 L3.52199992,21.5170975 Z M18.1669999,25.4270975 L18.1669512,28.863 L10.9509512,28.863 L10.9509999,25.4270975 L18.1669999,25.4270975 Z M25.5129999,21.5170975 L28.9919512,21.517 L28.9920725,25.169414 C28.9920725,27.2094461 27.3382997,28.8632188 25.2982677,28.8632188 L21.6889512,28.863 L21.6889999,25.4270975 L25.5130238,25.4271213 L25.5129999,21.5170975 Z M3.52199992,10.7790975 L3.52199992,17.9950975 L0.0429512185,17.995 L0.0429512185,10.779 L3.52199992,10.7790975 Z M25.5129999,10.7790975 L28.9919512,10.779 L28.9919512,17.995 L25.5129999,17.9950975 L25.5129999,10.7790975 Z M7.42895122,0 L7.42899992,3.43609748 L3.52199992,3.43609748 L3.52199992,7.25709748 L0.0429512185,7.257 L0.0429512185,3.69380479 C0.0429512185,1.65377274 1.69672395,8.18837019e-16 3.73675601,0 L7.42895122,0 Z M25.2982677,0 C27.3382997,-1.29848184e-15 28.9920725,1.65377274 28.9920725,3.69380479 L28.9919512,7.257 L25.5129999,7.25709748 L25.5130238,3.43609748 L21.6889999,3.43609748 L21.6889512,0 L25.2982677,0 Z M18.1669512,0 L18.1669999,3.43609748 L10.9509999,3.43609748 L10.9509512,0 L18.1669512,0 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="28.9491213" height="28.8632188" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="28.9491213" height="28.8632188" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="icon-medium" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CLIBOARD-ICON" transform="translate(4.000000, 4.000000)">
+            <g id="Group" transform="translate(10.737805, 0.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Combined-Shape" stroke="#682AD5" mask="url(#mask-2)" stroke-width="7.21580471" stroke-linecap="round" stroke-dasharray="6.87219467163086,3.43609733581543">
+                    <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                </g>
+            </g>
+            <rect id="Rectangle" stroke="#682AD5" stroke-width="3.60790235" fill="#682AD5" x="1.80395118" y="12.4558534" width="25.3412189" height="25.2553165" rx="3.69380479"></rect>
+        </g>
+    </g>
+</svg>
