@@ -28,11 +28,5 @@
     "icon-large-pink-k.png",
     "graceful.mp3",
     "check.svg"
-  ],
-  "externally_connectable": {
-    "matches": [
-      "*://*.kelyst.com/*",
-      "http://development.kelyst.com:3000/*"
-    ]
-  }
+  ]
 }
