@@ -56,7 +56,7 @@ browser.browserAction.onClicked.addListener(function(tab) {
       }
       else {
         console.log('CREATE SIGNUP TAB')
-        browser.tabs.create({url: 'https://www.kelyst.com/en/signup/'});
+        browser.tabs.create({url: 'https://www.kelyst.com/signup'});
       }
     });
   });

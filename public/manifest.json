@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Kelyst",
   "description": "The Real Estate Game Changer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage_url": "https://www.kelyst.com",
   "applications": {
       "gecko": {
@@ -18,6 +18,8 @@
     "128": "icon-large-pink-k.png"
   },
   "permissions": [
+    "https://api.kelyst.com/*",
+    "https://gist.githubusercontent.com/GuillaumeSarfati/756e915305346b04ba3bf1f619b64491/raw/parsing.json",
     "activeTab",
     "storage"
   ],

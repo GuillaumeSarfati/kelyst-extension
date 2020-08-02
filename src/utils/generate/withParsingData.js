@@ -8,6 +8,7 @@ export default async () => {
   const host = await getHost()
   const parsing = await getRemoteParsingData()
 
+  console.log('withParsingData : ', parsing)
   const instance = {}
   const hosts = Object.keys(parsing)
   let hostMatch = false

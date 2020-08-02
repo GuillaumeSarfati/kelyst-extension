@@ -28,7 +28,7 @@ class App extends Component {
     this.onCancel()
   }
 
-  onBoard = () => window.open(`https://www.kelyst.com/en/board/?publicId=${this.props.board.publicId}`, `_blank`)
+  onBoard = () => window.open(`https://kelyst.com/board/${this.props.board.publicId}`, `_blank`)
 
   onCancel = () => {
     this.app.classList.add('animate__animated', 'hide-kelyst')
@@ -63,9 +63,14 @@ class App extends Component {
 
 
   onPlaySong = () => {
+    try {
+
     const audio = new Audio(browser.runtime.getURL("graceful.mp3"));
     audio.volume = 0.1;
     audio.play();
+  } catch (e) {
+    console.log('[ onPlaySong ] error : ', e)
+  }
   }
 
   onListenToPageEvents = () => {
@@ -91,13 +96,13 @@ class App extends Component {
       }))
       this.startCounter()
     } catch (err) {
-      console.error('err : ', err)
+      console.error('onMountCard err : ', err)
     }
   }
   async componentDidMount() {
-    this.onPlaySong()
     this.onListenToPageEvents()
     this.onMountCard()
+    this.onPlaySong()
   }
 
   render() {
